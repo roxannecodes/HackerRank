@@ -6,22 +6,21 @@ example: n=4
 ####
 */
 
-// short-answer
-function staircase(n) {
-    for(let i = 1; i <= n; i++) {
-       console.log ( ' '.repeat(n - i) + '#'.repeat(i) );
+// string.repeat() = <3!
+function staircase (n) {
+    let string="#";
+    for (let i=0;i<n;i++){
+     console.log (string.repeat(i+1))
     }
 }
 staircase(4);
 
-//my solution
-function stairCase(n){
-    let arr = Array(n-1).fill(' ')
-    
-    for (let i = n-1; i >= 0; i--) {
-        arr[i] = '#';
-        console.log(arr.join(''));
-    }
+//upside-down staircase (backward for-loop)
+function staircase (n){
+let string = "#"
+for (let i=n-1;i>=0;i-- ){
+    console.log (string.repeat(i+1))
+}
 }
 
 staircase(6);
