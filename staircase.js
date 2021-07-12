@@ -5,7 +5,6 @@ example: n=4
 ###
 ####
 */
-
 //https://www.hackerrank.com/challenges/staircase/problem
 
 // string.repeat() = <3!
