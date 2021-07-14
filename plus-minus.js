@@ -30,10 +30,3 @@ plusMinus([1,1,0,-1,1]);
 //0.200000
 //0.200000
 
-/* using array filter method instead of for-loop 
-
-arr.filter (function(v){
-return v >0; // returns number of pos elements
- })
-
-*/
