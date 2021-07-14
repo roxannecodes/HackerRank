@@ -18,8 +18,15 @@ let birthdayCakeCandles = (arr) => {
             num +=1;
         }
     }
-     
    return num;
 }
 
 //console.log (birthdayCandles([4,4,1,3])); //2
+
+// Even better method 
+
+function birthdayCakeCandles(ar) {
+    let max = Math.max(...ar)
+    return ar.filter((v) => v === max).length
+  }
+  
