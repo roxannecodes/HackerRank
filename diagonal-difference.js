@@ -26,18 +26,18 @@ let diagonalDifference= (arr) => {
 }  
 return Math.abs(leftSum-rightSum);
 }
-console.log (diagonalDifference([[1,2,3],[4,5,6],[9,8,9]]));
+console.log (diagonalDifference([[1,2,3],[4,5,6],[9,8,9]]));//2
 
 
 
 
 
-// WRONG ANSWER :(
+// First Answer (( WRONG ANSWER))
 
 let diagonalDifference= (arr) => {
     let n=arr.length;
-    let leftSum;
-    let rightSum;
+    let leftSum =0;
+    let rightSum=0;
     
       for (let i=0; i<n; i++) {
         for (let j=0; j<n; j++) {
@@ -52,5 +52,5 @@ let diagonalDifference= (arr) => {
     }
     return Math.abs(leftSum - rightSum);
 }
-console.log (diagonalDifference([[1,2,3],[4,5,6],[9,8,9]]));
+console.log (diagonalDifference([[1,2,3],[4,5,6],[9,8,9]]));//3 (wrong)
 
