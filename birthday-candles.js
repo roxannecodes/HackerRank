@@ -21,12 +21,12 @@ let birthdayCakeCandles = (arr) => {
    return num;
 }
 
-//console.log (birthdayCakeCandles([4,4,1,3])); //2
+console.log (birthdayCakeCandles([4,4,1,3])); //2
 
-// Even better method 
+// Shorter method 
 
 function birthdayCakeCandles(arr) {
-    let numMax = Math.max(...ar);
+    let numMax = Math.max(...arr);
     return arr.filter((v) => v === max).length; //modifies original array to only contain filtered max items
   }
-  //console.log (birthdayCakeCandles([4,4,1,3])); //2
+  console.log (birthdayCakeCandles([4,4,1,3])); //2
