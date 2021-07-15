@@ -5,13 +5,11 @@
 //Print (on to the console) the decimal value of each fraction on a new line with 6 places after the decimal.
 
 // Using filter instead of for-loop
-
-
 let plusMinus= (arr) => {
     
     let pos = arr.filter ((v)=>v>0).length;
     let neg = arr.filter ((v)=>v<0).length;
-    let zero = arr.filter ((v)=>v=0).length;
+    let zero = arr.filter ((v)=>v==0).length;
     let n=arr.length;
     console.log ((pos/n).toFixed(6));
     console.log ((neg/n).toFixed(6));
