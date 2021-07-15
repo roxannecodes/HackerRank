@@ -4,6 +4,18 @@
  * returns min and max sum (2 space separated integers)
  */
 
+
+
+function miniMaxSum(arr) {
+    let sum = arr.reduce((a, b) => a + b);
+    let maxVal = Math.max(...arr);
+    let minVal = Math.min(...arr);
+    console.log((sum - maxVal) + " " + (sum - minVal));
+}
+
+//miniMaxSum([1,2,3,5,4]); // 10 14
+
+
 //*** first solution  *** 
 
 function miniMaxSum(arr) {
@@ -29,8 +41,8 @@ function miniMaxSum(arr) {
         }
     console.log(sum2 + " " + sum1);
 }
-//self-test
-//console.log (miniMaxSum([1,2,3,5,4]));
+
+//miniMaxSum([1,2,3,5,4]);
 
 // *** second solution ***
  function miniMaxSum(arr) {
@@ -51,14 +63,6 @@ function miniMaxSum(arr) {
       console.log (sum2 + " " + sum1);
  }
 
-//console.log (miniMaxSum([1,2,3,5,4]));
+//miniMaxSum([1,2,3,5,4]); 
 
-// *** Better solution ***
-function miniMaxSum(arr) {
-    let sum = arr.reduce((a, b) => a + b);
-    let maxVal = Math.max(...arr);
-    let minVal = Math.min(...arr);
-    console.log((sum - maxVal) + " " + (sum - minVal));
-}
 
-//console.log (miniMaxSum([1,2,3,5,4]));
